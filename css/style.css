@@ -8,16 +8,37 @@ body {
     background-color: rgb(254, 240, 243);
 }
 
-.main-header {
-    background-color: rgb(236, 214, 219);
-    display: flex; 
+@media only screen and (max-width: 600px) {
+    .main-header{
+        flex-direction: column;
+    }
+
+    nav{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .logo-icon{
+        margin-bottom: 20px;
+    }
+}
+
+
+.main-header .menu{
+    display: flex;
+}
+
+.main-header{
+    display: flex;
     justify-content: space-between;
-    padding: 10px;
-    margin-bottom: 20px;
+    align-items: center;
+    padding: 16px 32px;
+    /* border-bottom: 2px solid black; */
+    background-color: rgb(236, 214, 219);
 }
 
 .logo-icon {
-    background-image: url();
+    background-image: url(https://ih1.redbubble.net/image.4875861774.1351/tst,medium,507x507-pad,600x600,f8f8f8.u4.webp);
     background-size: cover;
     background-position: center;
     border: 1px solid;
@@ -38,26 +59,23 @@ nav a {
     color: rgb(202, 138, 147);
 }
 
+nav button {
+    border: none;
+    background-color: transparent;
+}
+
 nav a:hover {
     color: rgb(120, 62, 62);
     text-decoration: underline;
     animation-duration: 0.3s;
 }
 
-/* .left-rounder {
-    border-radius: 0px, 12px, 0px, 12px;
+.hero {
+    background-color: #fbe7e7;
 }
-
-.left-rounded{
-    border-radius: 30px 0px 0px 30px;
-}
-
-.right-rounded{
-    border-radius: 0px 30px 30px 0px;
-} */
 
 header {
-    padding: 15px;
+    padding: 32px 32px;
 }
 
 h1 {
@@ -75,24 +93,60 @@ h2 {
     font-size: 26px;
 }
 
+/* Slideshow container */
 .banner-img {
-    /* background-image: url(https://marketplace.canva.com/EAFRVbujcBA/1/0/1600w/canva-dark-pink-aesthetic-trust-that-good-things-are-coming-desktop-wallpaper-HTVbwurEFYI.jpg); */
-    background-image: url(https://marketplace.canva.com/EAFeQ6OwBaA/1/0/1600w/canva-pink-gradient-keep-going-desktop-wallpaper-UnwMGJ4UsZs.jpg);
-    background-size: cover;
-    background-position: center;
-    /* border: 1px solid; */
-    height: 450px;
-    padding: 0;
+    position: relative;
+    max-width: 100%; /* Sesuaikan dengan kebutuhan */
+    height: 700px; /* Atur tinggi gambar */
+    overflow: hidden;
+    margin: 20px auto;
 }
 
-/* .content {
-    height: 500px;
-} */
+/* Gambar di dalam slideshow */
+.slideshow {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Agar gambar tidak terdistorsi */
+    display: block; /* Hanya gambar aktif yang terlihat */
+    position: absolute; /* Agar semua gambar tumpang tindih */
+}
+
+.slideshow:first-child {
+    display: block;
+}
+
+/* Tombol navigasi slideshow */
+.banner-img button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Tombol transparan */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.banner-img button:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Efek hover */
+}
+
+/* Tombol sebelumnya */
+.banner-img button:first-child {
+    left: 10px;
+}
+
+/* Tombol berikutnya */
+.banner-img button:last-child {
+    right: 10px;
+}
 
 .intro-content {
+    margin-top: -20px;
     padding: 10%;
     display: flex;
-    background-color: rgb(255, 221, 221);
+    background-color: #fbe7e7;
 }
 
 .intro {
@@ -123,12 +177,17 @@ h2 {
     margin-top: 10px;
 }
 
-button {
-    background-color: rgb(213, 137, 137);
-    border: none;
-    padding: revert;
-    border-radius: 8px;
-    color: white;
+.btn button {
+    background-color: rgb(218, 167, 167);
+    border-radius: 5px;
+    color: rgb(249, 228, 228);
+    margin-left: -2px;
+    margin-top: 10px;
+}
+
+.btn button:hover {
+    background-color: rgb(252, 232, 232);
+    color: rgb(120, 62, 62);
 }
 
 .photo {
@@ -141,6 +200,68 @@ button {
     width: 85%;
 }
 
+.portofolio {
+    padding: 5%;
+    background-color: rgb(232, 203, 203);
+}
+
+.portofolio-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.portofolio header {
+    margin-bottom: 30px;
+}
+
+.portofolio h2 {
+    text-align: center;
+}
+
+.portofolio h3 {
+    text-align: center;
+    margin-bottom: -15px;
+    margin-right: 25px;
+    color: rgb(165, 92, 103);
+}
+
+.portofolio-box {
+    text-align: center;
+    background-color: #fbe7e7;
+    padding: 15px;
+    border-radius: 20px;
+    max-width: 250px;
+}
+
+.portofolio-box h4 {
+    padding-top: 13px;
+    margin-bottom: 15px;
+}
+
+.portofolio-box span {
+    font-size: 12px;
+}
+
+.portofolio-box p {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.portofolio a {
+    text-decoration: none;
+    color: rgb(120, 62, 62);
+}
+
+.portofolio-box button {
+    padding: 5px, 7px, 5px, 7px;
+    border-radius: 10px;
+    background-color: rgb(255, 213, 220);
+}
+
+.portofolio button:hover {
+    background-color: rgb(255, 237, 241);
+}
+
 .experience {
     background-color: rgb(244, 214, 221);
     padding: 5%;
@@ -149,6 +270,50 @@ button {
 
 .experience h2 {
     text-align: center;
+}
+
+.experiences {
+    margin: 35px 70px;
+}
+
+.experience-content {
+    padding: 20px;
+}
+
+.message {
+    padding: 5%;
+    /* text-align: center; */
+    background-color: rgb(231, 187, 196);
+}
+
+.message h2 {
+    text-align: center;
+}
+
+.message input, textarea { 
+    border: 1px solid rgb(120, 62, 62);
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+input[type="radio"]:checked {
+    filter: hue-rotate(-3400deg);
+}
+
+.submit {
+    cursor: pointer;
+    background-color: rgb(247, 218, 218);
+    border-radius: 5px;
+    color: rgb(120, 62, 62);
+    margin-left: -2px;
+    margin-top: 10px;
+}
+
+.submit:hover {
+    background-color: rgb(252, 232, 232);
+    color: rgb(120, 62, 62);
 }
 
 footer {
