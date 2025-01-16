@@ -13,38 +13,38 @@
 
 
 // pakai kode baris ini, jika ingin disambut alert dulu baru output web nya
-// let name = prompt("siapakah anda?", "");
-// document.getElementById("name").innerHTML = name
+let name = prompt("siapakah anda?", "");
+document.getElementById("name").innerHTML = name
 
-// let nameinput = document.getElementById('name-input')
+let nameinput = document.getElementById('name-input')
 
-// document.getElementById('submit').addEventListener("click" , function() {
-//     const nama = nameinput.value
+document.getElementById('submit').addEventListener("click" , function() {
+    const nama = nameinput.value
 
-//     document.getElementById('name').innerHTML = nama
-// })
+    document.getElementById('name').innerHTML = nama
+})
 
 // fungsi buat nama
-function validateForm() {
-    const nama = document.forms['message-form']['name-input'].value
-    const angka = 11
+// function validateForm() {
+//     const nama = document.forms['message-form']['name-input'].value
+//     const angka = 11
     
-    if (nama == '') {
-        document.getElementById("error-name").innerHTML = "Nama tidak boleh kosong";
+//     if (nama == '') {
+//         document.getElementById("error-name").innerHTML = "Nama tidak boleh kosong";
         
-        return false
-    }
+//         return false
+//     }
 
-    setName(nama);
+//     setName(nama);
 
-    return false;
+//     return false;
 
-}
+// }
 
-function setName(name) {
-    document.getElementById("name").innerHTML = name;
-    document.getElementById('error-name').innerHTML = "";
-}
+// function setName(name) {
+//     document.getElementById("name").innerHTML = name;
+//     document.getElementById('error-name').innerHTML = "";
+// }
 
 //fungsi buat geser-geser foto
 let slideIndex = 0; // Indeks slide dimulai dari 0

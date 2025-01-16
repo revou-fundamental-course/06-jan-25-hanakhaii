@@ -1,204 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Portofolio</title>
-</head>
-<body>
-    <!-- logo & nav -->
-    <header class="main-header">
-        <!-- logo -->
-        <div class="logo-icon"></div>
-
-        <!-- navigation -->
-        <nav>
-            <button><a href="" class="left-rounded">Home</a></button>
-            <button><a href="#about-me">About Me</a></button>
-            <button><a href="#portofolio">Portofolio</a></button>
-            <button><a href="#experience">Experience</a></button>
-            <button><a href="#contact" class="right-rounded">Message Me</a></button>
-        </nav>
-    </header>
-
-    <!-- <hr> -->
-
-    <!-- content -->
-    <main>
-        <!-- Hero Section -->
-        <section class="hero">
-            <header>
-                <h1>Hi <span id="name">User</span>, Welcome to my Portofolio</h1>
-                <p>I love myself, and coquette</p>
-            </header>
-
-            <div class="banner-img">
-                <img class="slideshow" src="https://wallpapers.com/images/hd/nice-desktop-wallpaper-1c6wx6imasnsxh0e.jpg" alt="Slide 1">
-                <img class="slideshow" src="https://i.pinimg.com/originals/a8/ac/aa/a8acaab160ebadb3ea2fdd60e996b7d8.jpg" alt="Slide 2">
-                <img class="slideshow" src="https://i.pinimg.com/originals/a7/bc/b5/a7bcb56168eab48a4c691727f2064aa7.png" alt="Slide 3">
-                <button onclick="changeSlide(-1)"> previous </button>
-                <button onclick="changeSlide(1)"> next </button>
-            </div>
-        </section>
-
-        <!-- about me -->
-         <section id="about-me" class="intro-content">
-            <!-- kiri -->
-            <header class="intro">
-                <h1>Hello, I'm</h1>
-                <h3>Hana Khairunnisa</h3>
-                <br>
-                <span> About Me </span>
-                <p>Hello! My name is <b>Hana Khairunnisa</b>, and I'm a <b>Senior High School</b> student at 
-                   <b>SMKN 1 Depok</b>, located in the vibrant city of Depok, West Java, Indonesia. Currently, 
-                   <b>I'm majoring in PPLG </b>(Pengembangan Perangkat Lunak dan Gim), where I'm honing my skills in software 
-                   and game development. I aspire to become a Frontend Developer, blending creativity and technology 
-                   to craft beautiful and functional user interfaces. My passion lies in mastering <b>HTML</b>, <B>CSS</B>, and a 
-                   <b>small section of JavaScript</b>, the perfect tools to bring my ideas to life. Beyond coding, 
-                   I have a soft spot for all things <b>coquette</b>; 
-                   the charm and aesthetic that inspire elegance and beauty in my creations.
-                </p>
-                <div class="btn">
-                    <button>HTML</button>
-                    <button>CSS</button>
-                    <button>JavaScript</button>
-                    <button>PHP</button>
-                    <button>MYSQLI</button>
-                    <!-- <button>Coquette</button> -->
-                </div>
-            </header>
-
-            <!-- kanan -->
-             <div class="photo">
-                <!-- fotoku -->
-                 <img src="img/hanaa.jpg" alt="">
-             </div>
-        </section>
-
-         <!-- Portofolio -->
-          <section class="portofolio">
-            <header id="portofolio">
-                <h3>My Project</h3>
-                <h2>𐙚 Portofolio 𐙚</h2>
-            </header>
-
-            <div class="content">
-                <div class="portofolio-content">
-                    <div class="portofolio-box">
-                        <h4>CRUD PHP & Mysql</h4>
-                        <img src="" alt="">
-                        <span>HTML, CSS, PHP, & Mysql</span>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                            Consequuntur qui labore totam asperiores vel obcaecati sapiente ea quas tenetur 
-                            placeat! Veniam tenetur veritatis culpa autem ullam qui expedita blanditiis sequi?</p>
-                        <button><a href="">Detail -></a></button>
-                    </div>
-                    <div class="portofolio-box">
-                        <h4>Web Aplication: Pengaduan Masyarakat</h4>
-                        <img src="" alt="">
-                        <span>HTML, CSS, JavaScript, PHP, & Mysql</span>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                            Consequuntur qui labore totam asperiores vel obcaecati sapiente ea quas tenetur 
-                            placeat! Veniam tenetur veritatis culpa autem ullam qui expedita blanditiis sequi?</p>
-                        <button><a href="">Detail -></a></button>
-                    </div>
-                    <div class="portofolio-box">
-                        <h4>Web Aplication : Fashion Shop</h4>
-                        <img src="" alt="">
-                        <span>(Coming Soon)</span>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                            Consequuntur qui labore totam asperiores vel obcaecati sapiente ea quas tenetur 
-                            placeat! Veniam tenetur veritatis culpa autem ullam qui expedita blanditiis sequi?</p>
-                        <button><a href="">Detail -></a></button>
-                    </div>
-                </div>
-            </div>
-          </section>
-
-          <!-- Experience -->
-          <section class="experience">
-            <header id="experience">
-                <h2>✩ ₊ My Experience ₊˚⊹♡</h2>
-            </header>
-
-            <div class="content">
-                <div class="experiences">
-                    <div class="experience-content">
-                        <h3>Sekretaris RHISAD</h3>
-                        <p>At 2025</p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br>
-                            Soluta, excepturi esse deserunt nihil, nobis fugiat unde suscipit voluptas hic maxime, <br>
-                            ipsam modi! Porro possimus consequatur beatae eveniet dolore recusandae ullam.</p>
-                    </div>
-                    <div class="experience-content" style="text-align: right;">
-                        <h3>Sekretaris RHISAD</h3>
-                        <p>At 2025</p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br>
-                            Soluta, excepturi esse deserunt nihil, nobis fugiat unde suscipit voluptas hic maxime, <br>
-                            ipsam modi! Porro possimus consequatur beatae eveniet dolore recusandae ullam.</p>
-                    </div>
-                    <div class="experience-content">
-                        <h3>Sekretaris RHISAD</h3>
-                        <p>At 2025</p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br>
-                            Soluta, excepturi esse deserunt nihil, nobis fugiat unde suscipit voluptas hic maxime, <br>
-                            ipsam modi! Porro possimus consequatur beatae eveniet dolore recusandae ullam.</p>
-                    </div>
-                    <div class="experience-content" style="text-align: right;">
-                        <h3>Sekretaris RHISAD</h3>
-                        <p>At 2025</p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br>
-                            Soluta, excepturi esse deserunt nihil, nobis fugiat unde suscipit voluptas hic maxime, <br>
-                            ipsam modi! Porro possimus consequatur beatae eveniet dolore recusandae ullam.</p>
-                    </div>
-                </div>
-            </div>
-          </section>
-
-          <!-- Contact -->
-          <section class="message">
-            <header id="contact">
-                <h2>‧₊˚Message Me ‧₊˚☎︎</h2>
-            </header>
-
-            <div class="content">
-                <form name="message-form" onsubmit="return validateForm()">
-                    Name:
-                    <br>
-                    <input type="text" name="full-name" placeholder="Full Name">
-                    <br>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/style.css">
+        <title>Portofolio</title>
+                </head>
+                <body>
+                    <!-- logo & nav -->
+                    <header class="main-header">
+                        <!-- logo -->
+                        <div class="logo-icon"></div>
                 
-                    Date of Birth:
-                    <br>
-                    <input type="date" name="birth-date">
-                    <br>
+                        <!-- navigation -->
+                        <nav>
+                            <button><a href="">Home</a></button>
+                            <button><a href="#about-me">About Me</a></button>
+                            <button><a href="#portofolio">Portofolio</a></button>
+                            <button><a href="#experience">Experience</a></button>
+                            <button><a href="#contact">Message Me</a></button>
+                        </nav>
+                    </header>
                 
-                    Gender:
-                    <br>
-                    <input type="radio" name="gender" id="male" value="male">
-                    <label for="male">Male</label>
-                    <br>
-                    <input type="radio" name="gender" id="female" value="female">
-                    <label for="female">Female</label>
-                    <br>
+                    <!-- <hr> -->
                 
-                    Message:
-                    <br>
-                    <textarea name="message" placeholder="Enter your message" rows="5" cols="30"></textarea>
-                    <br>
+                    <!-- content -->
+                    <main>
+                        <!-- Hero Section -->
+                        <section class="hero">
+                            <header>
+                                <h1>Hi <span id="name">User</span>, Welcome to my Portofolio</h1>
+                                <p>I love myself, and coquette</p>
+                                <!-- <form action="" name="message-form" onsubmit="return validateForm()">
+                                    <input type="text" placeholder="nama anda" id="name-input" name="name-input">
+                                    <button id="submit" type="submit">Kirim</button>
+                                    <p id="error-name"></p>
+                                </form> -->
+                            </header>
                 
-                    <div id="error" style="color: red;"></div>
-                    <input type="submit" value="Submit" class="submit">
-                </form>
-            </div>
-          </section>
-    </main>
-
-    <!-- footer -->
-    <footer>
-        <p>&copy; 2025. All rights reserved.</p>
-    </footer>
-    <script src="js/script.js"></script>
-</body>
-</html>
+                            <div class="banner-img">
+                                <img class="slideshow" src="https://wallpapers.com/images/hd/nice-desktop-wallpaper-1c6wx6imasnsxh0e.jpg" alt="Slide 1">
+                                <img class="slideshow" src="https://i.pinimg.com/originals/a8/ac/aa/a8acaab160ebadb3ea2fdd60e996b7d8.jpg" alt="Slide 2">
+                                <img class="slideshow" src="https://i.pinimg.com/originals/a7/bc/b5/a7bcb56168eab48a4c691727f2064aa7.png" alt="Slide 3">
+                                <button onclick="changeSlide(-1)" class="previous"> previous </button>
+                                <button onclick="changeSlide(1)"> next </button>
+                            </div>
+                        </section>
+                
+                        <!-- about me -->
+                         <section id="about-me" class="intro-content">
+                            <!-- kiri -->
+                            <header class="intro">
+                                <h1>Hello, I'm</h1>
+                                <h3>Hana Khairunnisa</h3>
+                                <br>
+                                <span> About Me </span>
+                                <p>Hello! My name is <b>Hana Khairunnisa</b>, and I'm a <b>Senior High School</b> student at 
+                                   <b>SMKN 1 Depok</b>, located in the vibrant city of Depok, West Java, Indonesia. Currently, 
+                                   <b>I'm majoring in PPLG </b>(Pengembangan Perangkat Lunak dan Gim), where I'm honing my skills in software 
+                                   and game development. I aspire to become a Frontend Developer, blending creativity and technology 
+                                   to craft beautiful and functional user interfaces. My passion lies in mastering <b>HTML</b>, <B>CSS</B>, and a 
+                                   <b>small section of JavaScript</b>, the perfect tools to bring my ideas to life. Beyond coding, 
+                                   I have a soft spot for all things <b>coquette</b>; 
+                                   the charm and aesthetic that inspire elegance and beauty in my creations.
+                                </p>
+                                <div class="btn">
+                                    <button>HTML</button>
+                                    <button>CSS</button>
+                                    <button>JavaScript</button>
+                                    <button>PHP</button>
+                                    <button>MYSQLI</button>
+                                    <!-- <button>Coquette</button> -->
+                                </div>
+                            </header>
+                
+                            <!-- kanan -->
+                             <div class="photo">
+                                <!-- fotoku -->
+                                 <img src="img/hanaa.jpg" alt="">
+                             </div>
+                        </section>
+                
+                         <!-- Portofolio -->
+                          <section class="portofolio">
+                            <header id="portofolio">
+                                <h3>My Project</h3>
+                                <h2>𐙚 Portofolio 𐙚</h2>
+                            </header>
+                
+                            <div class="content">
+                                <div class="portofolio-content">
+                                    <div class="portofolio-box">
+                                        <h4>CRUD PHP</h4>
+                                        <img src="" alt="">
+                                        <span>HTML, CSS, PHP, & Mysql</span>
+                                        <p>A simple web-based application that implements CRUD (Create, Read, Update, Delete) 
+                                            functions using PHP and SQLite. The project is designed to make data management easier, 
+                                            with key features such as dynamic data input, direct editing in tables, and secure deletion using pop-up 
+                                            confirmation.</p>
+                                        <button><a href="">Detail -></a></button>
+                                    </div>
+                                    <div class="portofolio-box">
+                                        <h4>Web Aplication: Pengaduan Masyarakat</h4>
+                                        <img src="" alt="">
+                                        <span>HTML, CSS, JavaScript, PHP, & MySQL</span>
+                                        <p>An online platform that allows the public to submit reports or complaints related to public services. 
+                                            This application is equipped with user authentication features, complaint management by admin, 
+                                            as well as real-time report status tracking. Built using PHP with a responsive interface for 
+                                            better user experience.</p>
+                                        <button><a href="">Detail -></a></button>
+                                    </div>
+                                    <div class="portofolio-box">
+                                        <h4>Web Aplication: Pemungutan Suara Ketos</h4>
+                                        <img src="" alt="">
+                                        <span>(Coming Soon)</span>
+                                        <p>A web-based application designed to digitalise the voting process in the Student 
+                                            Council President election. Key features include voter registration, secure online voting, 
+                                            as well as automatic and transparent display of vote count results. The project supports students' 
+                                            democratic participation with a user-friendly system.</p>
+                                        <button><a href="">Detail -></a></button>
+                                    </div>
+                                </div>
+                            </div>
+                          </section>
+                
+                          <!-- Experience -->
+                          <section class="experience">
+                            <header id="experience">
+                                <h2>✩ ₊ My Hardest Experience ₊˚⊹♡</h2>
+                            </header>
+                
+                            <div class="content">
+                                <div class="experiences">
+                                    <div class="experience-content">
+                                        <h4>At 2024</h4>
+                                        <h3>Creating 3d Assets in Blender</h3>
+                                            <p>Blender's space depicts a simple yet elegant interior with a Chinese Food House theme, <br>
+                                                where a low wooden table takes centre stage, surrounded by two red seat cushions that <br>
+                                                symbolise good luck in Chinese culture. The room's décor includes hanging lanterns <br>
+                                                with traditional designs that provide soft lighting, minimalist wall shelves adorned with vases, <br>
+                                                books and small ornaments, and a large vase filled with dried branches that adds a natural touch. </p>
+                                    </div>
+                                    <div class="experience-content" style="text-align: right;">
+                                        <h4>At 2024</h4>
+                                        <h3>Create Plant Store App in Android Studio</h3>
+                                            <p>The app design features visual elements such as leaf illustrations, plant pot icons, and friendly, <br>
+                                                modern fonts, creating a pleasant experience for users. Features such as plant catalogues, care guides, <br>
+                                                and easy-to-browse categories are designed to make it easier for customers to choose their favourite plants. <br>
+                                                With a combination of colours, natural design elements, and a clean layout, the app creates a lush vibe, <br>
+                                                perfect for plant lovers or anyone who wants to bring some green into their space.</p>
+                                    </div>
+                                    <div class="experience-content">
+                                        <h4>At 2024-Now</h4>
+                                        <h3>Learn Laravel</h3>
+                                            <p>Initially, learning Laravel felt like a big puzzle, with a lot to understand, <br>
+                                                from syntax to new MVC concepts. However, the excitement of starting something new overcame the initial <br>
+                                                confusion and frustration. Every error that arose became a challenge, and every solution that was found <br>
+                                                became a pleasant little victory. In the end, with effort and perseverance, I finally got the hang of <br>
+                                                Laravel and I'm currently developing a coquette-themed blog! that blends elegance and beauty with a modern <br> 
+                                                twist, showing that the first difficult step is worth taking for the rewarding results.</p>
+                                    </div>
+                                    <div class="experience-content" style="text-align: right;">
+                                        <h4>At Now</h4>
+                                        <h3>Secretary at RHISAD</h3>
+                                            <p>Starting something new is not easy, especially when it comes to extracurricular. <br>
+                                                I had to mingle with new people from  different majors, and I also had to carry out <br>
+                                                my duties as secretary. Honestly, I felt scared and anxious. However, <br>
+                                                Bismillah... slowly and leisurely, Insya Allah, I can do it.</p>
+                                    </div>
+                                </div>
+                            </div>
+                          </section>
+                
+                          <!-- Contact -->
+                          <section class="message">
+                            <header id="contact">
+                                <h2>‧₊˚Message Me ‧₊˚☎</h2>
+                            </header>
+                
+                            <div class="content">
+                                <form name="message-form" onsubmit="return validateForm()">
+                                    Name:
+                                    <br>
+                                    <input type="text" name="full-name" placeholder="Full Name">
+                                    <br>
+                                
+                                    Date of Birth:
+                                    <br>
+                                    <input type="date" name="birth-date">
+                                    <br>
+                                
+                                    <label for="">Gender</label>
+                                    <br>
+                                    <div class="mel">
+                                        <input type="radio" name="gender" id="male" value="male">
+                                        <label for="male">Male</label>
+                                    </div>
+                                    <br>
+                                    <div class="fimel">
+                                        <input type="radio" name="gender" id="female" value="female">
+                                        <label for="female">Female</label>
+                                    </div>
+                                    <br>
+                                
+                                    Message:
+                                    <br>
+                                    <textarea name="message" placeholder="Enter your message" rows="5" cols="30"></textarea>
+                                    <br>
+                                
+                                    <div id="error" style="color: red;"></div>
+                                    <input type="submit" value="Submit" class="submit">
+                                </form>
+                            </div>
+                          </section>
+                    </main>
+                
+                    <!-- footer -->
+                    <footer>
+                        <p>&copy; 2025. All rights reserved.</p>
+                    </footer>
+                    <script src="js/script.js"></script>
+                </body>
+                </html>

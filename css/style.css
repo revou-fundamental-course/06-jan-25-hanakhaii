@@ -8,6 +8,7 @@ body {
     background-color: rgb(254, 240, 243);
 }
 
+/* navigasi */
 @media only screen and (max-width: 600px) {
     .main-header{
         flex-direction: column;
@@ -23,6 +24,132 @@ body {
     }
 }
 
+/* Untuk bagian hero */
+@media only screen and (max-width: 600px) {
+    .hero {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+}
+
+/* Untuk slideshow */
+@media only screen and (max-width: 600px) {
+    .banner-img {
+        height: 200px; /* Sesuaikan tinggi gambar */
+    }
+
+    .slideshow {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Gambar tetap proporsional */
+    }
+
+    .banner-img button {
+        padding: 5px 10px;
+        font-size: 12px; /* Ukuran teks tombol lebih kecil */
+    }
+
+    .banner-img button:first-child {
+        left: 5px; /* Jarak tombol lebih kecil */
+    }
+
+    .banner-img button:last-child {
+        right: 5px; /* Jarak tombol lebih kecil */
+    }
+}
+
+/* Untuk bagian intro */
+@media only screen and (max-width: 600px) {
+    .intro-content {
+        flex-direction: column;
+        padding: 5%;
+    }
+
+    .intro {
+        width: 100%;
+    }
+
+    .photo {
+        width: 100%;
+        text-align: center;
+    }
+
+    .photo img {
+        width: 50%;
+    }
+}
+
+/* Untuk bagian portofolio */
+@media only screen and (max-width: 600px) {
+    .portofolio-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portofolio-box {
+        max-width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Untuk bagian pengalaman */
+@media only screen and (max-width: 600px) {
+    .experiences {
+        margin: 0;
+    }
+
+    .experience-content {
+        padding: 10px;
+    }
+}
+
+/* Untuk bagian pesan */
+@media only screen and (max-width: 600px) {
+    .message {
+        padding: 40px 20px;
+        margin: 20px 0;
+        max-width: 100%;
+    }
+
+    .message header h2 {
+        font-size: 24px;
+    }
+
+    .message .content {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .message form {
+        width: 100%;
+        gap: 10px;
+    }
+
+    .message input, .message textarea {
+        font-size: 14px;
+    }
+
+    .message .submit {
+        font-size: 16px;
+    }
+}
+
+/* Untuk footer */
+@media only screen and (max-width: 600px) {
+    footer {
+        text-align: center;
+        padding: 10px;
+    }
+}
 
 .main-header .menu{
     display: flex;
@@ -92,6 +219,59 @@ h2 {
     color: rgb(120, 62, 62);
     font-size: 26px;
 }
+
+@media only screen and (max-width: 600px) {
+    .banner-img {
+        height: auto; /* Biarkan tinggi menyesuaikan */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .slideshow {
+        width: 100%;
+        height: auto;
+        max-height: 300px; /* Sesuaikan tinggi gambar di mobile */
+        object-fit: contain; /* Pastikan gambar tidak terpotong */
+        position: relative; /* Supaya tetap terlihat */
+    }
+
+      /* Tombol navigasi */
+    .banner-img button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.6);
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        font-size: 16px;
+        cursor: pointer;
+        z-index: 10;
+        transition: background-color 0.3s ease;
+    }
+
+    .banner-img button:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Tombol prev (kiri) */
+   .banner-img button:first-child {
+        left: 10px;
+        padding-left: 5px; /* Opsional: Tambahkan padding agar tidak terlalu ke tepi */
+    }
+
+    .previous{
+        margin-right: 375px;
+    }
+
+    /* Tombol next (kanan) */
+    .banner-img button:last-child {
+        right: 10px;
+    }
+}
+
 
 /* Slideshow container */
 .banner-img {
@@ -278,6 +458,17 @@ h2 {
 
 .experience-content {
     padding: 20px;
+}
+
+.experience-content h4 {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 100;
+}
+
+.experience-content h3 {
+   margin-top: 5px;
+   margin-bottom: 5px;
 }
 
 .message {
